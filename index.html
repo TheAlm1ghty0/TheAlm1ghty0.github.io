@@ -30,7 +30,8 @@
 			function changecolour(){
 				let color = document.getElementById('colorpicker').value;
 				document.body.style.backgroundColor = color;
-				document.body.style.textDecorationColor = invertColor(document.getElementById('colorpicker').value);
+				let oppColour = invertColor(document.getElementById('colorpicker').value);
+				document.getElementById('head').style.color=oppColour;
 			}
 		</script>
 	</head>
