@@ -30,7 +30,7 @@
 			function changecolour(){
 				let color = document.getElementById('colorpicker').value;
 				document.body.style.backgroundColor = color;
-				document.body.style.fontColor = invertColor(document.getElementById('colorpicker').value);
+				document.body.style.textDecorationColor = invertColor(document.getElementById('colorpicker').value);
 			}
 		</script>
 	</head>
@@ -42,8 +42,5 @@
 		<p></p>
 		<label>Select your favorite color:     </label>
 		<input id = "colorpicker" type = "color" value="#FFFFFF" onclick = "changecolour();">
-  		<!-- 
-		<button onclick = "changecolor();"> change Color </button>
-		-->
 	</body>
 </html>
