@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<title>Oscar Kohn's Portfolio</title>
+		<script>
+			function changecolor(){
+				let color = document.getElementById('colorpicker').value;
+				document.body.style.backgroundColor = color;
+			}
+		</script>
 	</head>
 	<body>
 		<h1>Oscar Kohn</h1>
@@ -10,7 +16,7 @@
 		<p></p>
 		<p></p>
 		<label for="favcolor">Select your favorite color:</label>
-		<input type="color" id="favcolor" name="favcolor" value="#e66465">
-		bgcolour=favcolor
+		<input id = "colorpicker" type = "color">
+  		<button onclick = "changecolor();"> change Color </button>
 	</body>
 </html>
